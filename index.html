@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Critical Race Theory</title>
+        <link rel = "stylesheet" href = "style.css">
+        <script src = "script.js"></script>
+        <script src = "itemData.js"></script>
+
+        <!-- Import Google Font: Roboto Mono -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">
+
+        <style></style>
+    </head>
+    <body onload = "initialize()">
+        <nav>
+            <div class = "index_title">Critical Race Theory</div>
+        </nav>
+
+        <section class = "introduction">
+            <div>
+                Introduction
+            </div>
+            <p>
+                Project Created for Mr. Lederer's Critical Race Project. Randomly generates a quote from famous black people across the history.
+            </p>
+        </section>
+
+        <div class = "container">
+			<div class = "inner">
+				<button onclick = "generateContent()" class = "generateButton">Generate Quote</button>
+				<p class = "quote" id = "quote">Click Above to Generate a Quote!</p>
+				<p class = "picture"><img id = "picture_src" src = ""></p>
+				<p class = "name" id = "name"></p>
+				<p class = "biography" id = "biography"></p> 
+			</div>
+        </div>
+    </body>
+</html>
