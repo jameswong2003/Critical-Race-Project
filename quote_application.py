@@ -1,13 +1,13 @@
 import json
-from typing_extensions import Self
-
-
 
 class person:
     def __init__(self, name, quote, image):
         self.name = name
         self.quote = quote
         self.image = image
+    
+    def contact(self):
+        return self.name + " " + self.quote
 
 
 class people:
@@ -20,3 +20,4 @@ person1 = person('James', 'python', 'image1')
 person2 = person('Mathew', 'java', 'image2')
 person3 = person('Way', 'Javascript', 'image2')
 
+group = people(person1, person2, person3)
